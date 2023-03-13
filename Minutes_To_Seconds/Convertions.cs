@@ -9,6 +9,9 @@ namespace Minutes_To_Seconds
     public class Convertions
     {
 
+        public string baseConvertionType;
+        public string DesiredConvertionType;
+
         public void MinutesToSeconds(double minutes) {
 
             var seconds = minutes * 60;

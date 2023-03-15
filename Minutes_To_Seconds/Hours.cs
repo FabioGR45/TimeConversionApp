@@ -34,6 +34,8 @@ namespace Minutes_To_Seconds
 
                     if (hours == 0.00027777 || hours == 0.000277778)
                         Console.WriteLine($"\n{hours} hours equals {desiredTimeConversion} second");
+                    else if (hours >= -1 && hours <= 1)
+                        Console.WriteLine($"\n{hours} hour equals {desiredTimeConversion} seconds");
                     else
                         Console.WriteLine($"\n{hours} hours equals {desiredTimeConversion} seconds");
 
@@ -55,7 +57,7 @@ namespace Minutes_To_Seconds
 
                     desiredTimeConversion = hours * 60;
 
-                    if (hours <= 1)
+                    if (hours >= -1 && hours <= 1)
                         Console.WriteLine($"\n{hours} hour equals {desiredTimeConversion} minutes");
                     else if (hours == 0.0166666 || hours == 0.0166667) { 
                         Console.WriteLine($"\n{hours} hour equals {desiredTimeConversion} minute");
@@ -67,7 +69,7 @@ namespace Minutes_To_Seconds
 
                 case "days":
 
-                    Console.Write($"Write the number of minutes you want to convert to {desiredConvertionType}: ");
+                    Console.Write($"Write the number of hours you want to convert to {desiredConvertionType}: ");
 
                     userInputValue = Console.ReadLine();
 
@@ -82,6 +84,8 @@ namespace Minutes_To_Seconds
 
                     if (hours <= 24)
                         Console.WriteLine($"\n{hours} hours equals {desiredTimeConversion} day");
+                    else if (hours >= -1 && hours <= 1)
+                        Console.WriteLine($"\n{hours} hour equals {desiredTimeConversion} day");
                     else
                         Console.WriteLine($"\n{hours} hours equals {desiredTimeConversion} days");
 

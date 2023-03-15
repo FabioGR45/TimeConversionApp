@@ -34,6 +34,8 @@ namespace Minutes_To_Seconds
 
                     if (minutes == 0.0166666 || minutes == 0.0166667)
                         Console.WriteLine($"\n{minutes} minute equals {desiredTimeConversion} second");
+                    else if (minutes >= -1 && minutes <= 1)
+                        Console.WriteLine($"\n{minutes} minute equals {desiredTimeConversion} seconds");
                     else
                         Console.WriteLine($"\n{minutes} minutes equals {desiredTimeConversion} seconds");
 
@@ -57,6 +59,8 @@ namespace Minutes_To_Seconds
 
                     if (minutes <= 60)
                         Console.WriteLine($"\n{minutes} minutes equals {desiredTimeConversion} hour");
+                    else if (minutes >= -1 && minutes <= 1)
+                        Console.WriteLine($"\n{minutes} minute equals {desiredTimeConversion} hour");
                     else
                         Console.WriteLine($"\n{minutes} minutes equals {desiredTimeConversion} hours");
 
@@ -79,6 +83,8 @@ namespace Minutes_To_Seconds
 
                     if (minutes <= 1440)
                         Console.WriteLine($"\n{minutes} minutes equals {desiredTimeConversion} day");
+                    else if (minutes >= -1 && minutes <= 1)
+                        Console.WriteLine($"\n{minutes} minute equals {desiredTimeConversion} day");
                     else
                         Console.WriteLine($"\n{minutes} minutes equals {desiredTimeConversion} days");
 

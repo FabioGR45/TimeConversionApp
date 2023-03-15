@@ -11,6 +11,7 @@ namespace Minutes_To_Seconds
             string desiredTimeTypeResult = "a";
             Seconds secondsConvertion = new Seconds();
             Minutes minutesConvertion = new Minutes();
+            Hours hoursConvertion = new Hours();
 
             while (userInputValue != "exit")
             {
@@ -41,7 +42,7 @@ namespace Minutes_To_Seconds
                         break;
 
                     case "hours":
-
+                            hoursConvertion.HoursTo(desiredTimeTypeResult);
                         break;
 
                     case "days":

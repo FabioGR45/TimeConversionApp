@@ -32,10 +32,10 @@ namespace Minutes_To_Seconds
 
                     desiredTimeConversion = minutes * 60;
 
-                    if (minutes >= 0.0166666 || minutes <= 0.0166667)
-                        Console.WriteLine($"\n{minutes} minute equals {desiredTimeConversion} seconds");
+                    if (minutes == 0.0166666 || minutes == 0.0166667)
+                        Console.WriteLine($"\n{minutes} minute equals {desiredTimeConversion} second");
                     else
-                        Console.WriteLine($"\n{minutes} seconds equals {desiredTimeConversion} seconds");
+                        Console.WriteLine($"\n{minutes} minutes equals {desiredTimeConversion} seconds");
 
                     break;
 
@@ -77,7 +77,7 @@ namespace Minutes_To_Seconds
 
                     desiredTimeConversion = minutes / 1440;
 
-                    if (minutes <= 86400)
+                    if (minutes <= 1440)
                         Console.WriteLine($"\n{minutes} minutes equals {desiredTimeConversion} day");
                     else
                         Console.WriteLine($"\n{minutes} minutes equals {desiredTimeConversion} days");
